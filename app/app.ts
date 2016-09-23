@@ -6,6 +6,7 @@ import { ConnectionService } from './providers/connection-service/connection-ser
 import { HomePage } from './pages/home/home';
 import { MenuTestPage } from './pages/menu-test/menu-test';
 import { GeneratedTestPage } from './pages/generated-test/generated-test';
+import { AlertPage } from './pages/alert/alert';
 
 
 @Component({
@@ -21,7 +22,8 @@ export class MyApp {
     this.pages = [
     {compenent: HomePage, title: "Home Page", icon: "home"},
     {compenent: MenuTestPage, title: "Menu Test", icon: "menu"},
-    {compenent: GeneratedTestPage, title: "Generated Page", icon: "home"}
+    {compenent: GeneratedTestPage, title: "Generated Page", icon: "home"},
+    {compenent: AlertPage, title: "Alert Page", icon: "alert"}
   ];
 
     platform.ready().then(() => {
