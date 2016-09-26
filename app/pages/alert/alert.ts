@@ -12,6 +12,8 @@ import { NavController, AlertController } from 'ionic-angular';
 })
 export class AlertPage {
 
+  user : string = '';
+
   constructor(private navCtrl: NavController, private AlertCtrl: AlertController) {
 
   }
@@ -19,7 +21,24 @@ export class AlertPage {
   showAlert() : void {
     let alert = this.AlertCtrl.create({
       title: 'Nome',
-      buttons:['Ok']
+      message: 'Digite seu nome',
+      inputs:[
+        {
+        name: 'nome',
+        placeholder: 'Seu nome'
+        }
+      ],
+      buttons:[
+        {
+          text: 'Cancelar'
+        },
+        {
+          text: 'ok',
+          handler: (data) => {
+            this.user = data.nome;
+          }
+        }
+      ]
     });
     alert.present();
   }
