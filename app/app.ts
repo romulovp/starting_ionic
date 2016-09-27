@@ -9,6 +9,7 @@ import { GeneratedTestPage } from './pages/generated-test/generated-test';
 import { AlertPage } from './pages/alert/alert';
 import { ButtonsPage } from './pages/buttons/buttons';
 import { CardsPage } from './pages/cards/cards';
+import { BgCardPage } from './pages/bg-card/bg-card';
 
 
 @Component({
@@ -27,7 +28,8 @@ export class MyApp {
     {compenent: GeneratedTestPage, title: "Generated Page", icon: "home"},
     {compenent: AlertPage, title: "Alert Page", icon: "alert"},
     {compenent: ButtonsPage, title: "Buttons Page", icon: "arrow-dropdown-circle"},
-    {compenent: CardsPage, title: "Cards Page", icon: "card"}
+    {compenent: CardsPage, title: "Cards Page", icon: "card"},
+    {compenent: BgCardPage, title: "Bg Cards", icon: "card"}
   ];
 
     platform.ready().then(() => {
