@@ -14,6 +14,7 @@ import { SocialCardPage } from './pages/social-card/social-card';
 import { MapCardsPage } from './pages/map-cards/map-cards';
 import { IconsPage } from './pages/icons/icons';
 import { InputsPage } from './pages/inputs/inputs';
+import { ListPage } from './pages/list/list';
 
 
 @Component({
@@ -37,7 +38,8 @@ export class MyApp {
     {compenent: SocialCardPage, title: "Social Cards", icon: "card"},
     {compenent: MapCardsPage, title: "Map Cards", icon: "map"},
     {compenent: IconsPage, title: "Icons", icon: "map"},
-    {compenent: InputsPage, title: "Inputs", icon: "home"}
+    {compenent: InputsPage, title: "Inputs", icon: "home"},
+    {compenent: ListPage, title: "Lists", icon: "add"}
   ];
 
     platform.ready().then(() => {
