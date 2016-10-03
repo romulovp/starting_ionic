@@ -13,6 +13,7 @@ import { BgCardPage } from './pages/bg-card/bg-card';
 import { SocialCardPage } from './pages/social-card/social-card';
 import { MapCardsPage } from './pages/map-cards/map-cards';
 import { IconsPage } from './pages/icons/icons';
+import { InputsPage } from './pages/inputs/inputs';
 
 
 @Component({
@@ -35,7 +36,8 @@ export class MyApp {
     {compenent: BgCardPage, title: "Bg Cards", icon: "card"},
     {compenent: SocialCardPage, title: "Social Cards", icon: "card"},
     {compenent: MapCardsPage, title: "Map Cards", icon: "map"},
-    {compenent: IconsPage, title: "Icons", icon: "map"}
+    {compenent: IconsPage, title: "Icons", icon: "map"},
+    {compenent: InputsPage, title: "Inputs", icon: "home"}
   ];
 
     platform.ready().then(() => {
