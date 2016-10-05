@@ -16,6 +16,8 @@ import { IconsPage } from './pages/icons/icons';
 import { InputsPage } from './pages/inputs/inputs';
 import { ListPage } from './pages/list/list';
 import { GridPage } from './pages/grid/grid';
+import { ModalPage } from './pages/modal/modal';
+import { ModalLoginPage } from './pages/modal-login/modal-login';
 
 
 @Component({
@@ -41,7 +43,9 @@ export class MyApp {
     {compenent: IconsPage, title: "Icons", icon: "map"},
     {compenent: InputsPage, title: "Inputs", icon: "home"},
     {compenent: ListPage, title: "Lists", icon: "add"},
-    {compenent: GridPage, title: "Grids", icon: "add"}
+    {compenent: GridPage, title: "Grids", icon: "add"},
+    {compenent: ModalPage, title: "Modal", icon: "add"}
+    //{compenent: ModalLoginPage, title: "Modal Login", icon: "add"}
   ];
 
     platform.ready().then(() => {
