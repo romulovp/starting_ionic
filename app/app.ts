@@ -20,6 +20,7 @@ import { ModalPage } from './pages/modal/modal';
 import { ModalLoginPage } from './pages/modal-login/modal-login';
 import { NavigationPage } from './pages/navigation/navigation';
 import { TabsPage } from './pages/tabs/tabs';
+import { ToastPage } from './pages/toast/toast';
 
 
 @Component({
@@ -48,7 +49,8 @@ export class MyApp {
     {compenent: GridPage, title: "Grids", icon: "add"},
     {compenent: ModalPage, title: "Modal", icon: "add"},
     {compenent: NavigationPage, title: "Navigation", icon: "add"},
-    {compenent: TabsPage, title: "Tabs", icon: "add"}
+    {compenent: TabsPage, title: "Tabs", icon: "add"},
+    {compenent: ToastPage, title: "Toast", icon: "add"}
   ];
 
     platform.ready().then(() => {
