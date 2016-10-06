@@ -18,6 +18,8 @@ import { ListPage } from './pages/list/list';
 import { GridPage } from './pages/grid/grid';
 import { ModalPage } from './pages/modal/modal';
 import { ModalLoginPage } from './pages/modal-login/modal-login';
+import { NavigationPage } from './pages/navigation/navigation';
+import { TabsPage } from './pages/tabs/tabs';
 
 
 @Component({
@@ -44,8 +46,9 @@ export class MyApp {
     {compenent: InputsPage, title: "Inputs", icon: "home"},
     {compenent: ListPage, title: "Lists", icon: "add"},
     {compenent: GridPage, title: "Grids", icon: "add"},
-    {compenent: ModalPage, title: "Modal", icon: "add"}
-    //{compenent: ModalLoginPage, title: "Modal Login", icon: "add"}
+    {compenent: ModalPage, title: "Modal", icon: "add"},
+    {compenent: NavigationPage, title: "Navigation", icon: "add"},
+    {compenent: TabsPage, title: "Tabs", icon: "add"}
   ];
 
     platform.ready().then(() => {
