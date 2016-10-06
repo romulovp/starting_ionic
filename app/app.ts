@@ -21,6 +21,7 @@ import { ModalLoginPage } from './pages/modal-login/modal-login';
 import { NavigationPage } from './pages/navigation/navigation';
 import { TabsPage } from './pages/tabs/tabs';
 import { ToastPage } from './pages/toast/toast';
+import { ToolbarPage } from './pages/toolbar/toolbar';
 
 
 @Component({
@@ -50,7 +51,8 @@ export class MyApp {
     {compenent: ModalPage, title: "Modal", icon: "add"},
     {compenent: NavigationPage, title: "Navigation", icon: "add"},
     {compenent: TabsPage, title: "Tabs", icon: "add"},
-    {compenent: ToastPage, title: "Toast", icon: "add"}
+    {compenent: ToastPage, title: "Toast", icon: "add"},
+    {compenent: ToolbarPage, title: "Toolbar", icon: "add"}
   ];
 
     platform.ready().then(() => {

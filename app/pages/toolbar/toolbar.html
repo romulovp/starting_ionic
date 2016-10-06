@@ -4,7 +4,7 @@
     <button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Toast</ion-title>
+    <ion-title>Toolbar</ion-title>
     <ion-buttons right>
       <button menuToggle="right">
         <ion-icon name="menu"></ion-icon>
@@ -14,7 +14,18 @@
 
 </ion-header>
 
-
 <ion-content padding>
-  <button block (click)="showToast()">Show Toast</button>
+
+  <ion-toolbar danger>
+    <ion-title>Sub-header</ion-title>
+  </ion-toolbar>
+
+
+  <p>Exemplo de Toolbar</p>
+
+  <ion-footer>
+    <ion-toolbar danger>
+      <ion-title>Footer</ion-title>
+    </ion-toolbar>
+  </ion-footer>
 </ion-content>
